@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1678962086",
+        "python_version": "3.7.3 (default, Apr 24 2019, 15:29:51) [MSC v.1915 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Matthew\\AppData\\Local\\Continuum\\miniconda3\\envs\\ml-agents-1.0\\Scripts\\mlagents-learn .\\new_trainer_config.yaml --force --run-id hb_01",
+        "mlagents_version": "0.29.0",
+        "mlagents_envs_version": "0.29.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.6.0",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1678962165"
+    },
+    "total": 79.1534517,
+    "count": 1,
+    "self": 0.017157300000008036,
+    "children": {
+        "run_training.setup": {
+            "total": 0.19154859999999996,
+            "count": 1,
+            "self": 0.19154859999999996
+        },
+        "TrainerController.start_learning": {
+            "total": 78.94474579999999,
+            "count": 1,
+            "self": 0.00029630000000224754,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 78.944383,
+                    "count": 1,
+                    "self": 78.944383
+                },
+                "TrainerController._save_models": {
+                    "total": 6.649999998842304e-05,
+                    "count": 1,
+                    "self": 6.649999998842304e-05
+                }
+            }
+        }
+    }
+}
