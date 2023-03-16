@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,10 +9,10 @@ using UnityEngine;
 public class Flower : MonoBehaviour
 {
     [Tooltip("The color when the flower is full")]
-    public Color fullFlowerColor = new Color(1f, 0f, 0.3f);
+    public Color fullFlowerColor = new Color(1f, 0f, .3f);
 
     [Tooltip("The color when the flower is empty")]
-    public Color emptyFlowerColor = new Color(0.5f, 0f, 1f);
+    public Color emptyFlowerColor = new Color(.5f, 0f, 1f);
 
     /// <summary>
     /// The trigger collider representing the nectar
@@ -24,7 +25,6 @@ public class Flower : MonoBehaviour
 
     // The flower's material
     private Material flowerMaterial;
-
 
     /// <summary>
     /// A vector pointing straight out of the flower
@@ -63,7 +63,6 @@ public class Flower : MonoBehaviour
             return NectarAmount > 0f;
         }
     }
-
 
     /// <summary>
     /// Attempts to remove nectar from the flower
